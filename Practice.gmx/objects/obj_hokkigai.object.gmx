@@ -57,9 +57,7 @@ if(hit != noone){
     instance_destroy();
 }
 
-if(global.lvl == "tataki"){
-    instance_destroy();
-}
+
 </string>
           </argument>
         </arguments>

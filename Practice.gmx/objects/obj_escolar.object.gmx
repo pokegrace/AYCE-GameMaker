@@ -57,9 +57,7 @@ if(hit != noone){
     instance_destroy();
 }
 
-if(global.lvl == "ikura"){
-    instance_destroy();
-}
+
 </string>
           </argument>
         </arguments>

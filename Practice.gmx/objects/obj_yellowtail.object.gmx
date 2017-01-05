@@ -57,9 +57,7 @@ if(hit != noone){
     instance_destroy();
 }
 
-if(global.lvl == "tai"){
-    instance_destroy();
-}
+
 </string>
           </argument>
         </arguments>

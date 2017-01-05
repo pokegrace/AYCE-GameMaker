@@ -28,8 +28,8 @@
             <string>image_index = 0; // making it start off as salmon
 image_speed = 0; // stops it from cycling through images
 
-friction = 0.08; // setting friction so player slows down
-
+depth = -1000; // makes it closer to the player
+path_start(p_player, 25, path_action_continue, true);
 </string>
           </argument>
         </arguments>
@@ -53,21 +53,11 @@ friction = 0.08; // setting friction so player slows down
           <argument>
             <kind>1</kind>
             <string>//--------------------movement------------------------
-if keyboard_check_pressed(vk_left){hspeed -= 10};
-if keyboard_check_pressed(vk_right){hspeed += 10};
-if keyboard_check_pressed(vk_up){vspeed -= 10};
-if keyboard_check_pressed(vk_down){vspeed += 10};
-
-if (speed &gt; 20){
-    speed = 20;
+if(keyboard_check_pressed(vk_space) &amp;&amp; path_speed == 25){
+    path_speed = -25;
+} else if (keyboard_check_pressed(vk_space) &amp;&amp; path_speed == -25){
+    path_speed = 25;
 }
-
-// making sure player can't leave room
-x = min(x, room_width-80);
-x = max(x, 80);
-y = min(y, room_height-80);
-y = max(y, 80);
-
 // -----------------collisions--------------------------
 hitWasabi = instance_place(x,y,obj_wasabi); // collision with wasabi
 hitSalmon = instance_place(x,y,obj_salmon); // collision with salmon

@@ -57,9 +57,7 @@ if(hit != noone){
     instance_destroy();
 }
 
-if(global.lvl == "hokkigai"){
-    instance_destroy();
-}
+
 </string>
           </argument>
         </arguments>

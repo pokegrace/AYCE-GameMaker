@@ -52,7 +52,7 @@
 draw_set_font(fnt_score);
 
 // (xpos, ypos, sting to draw, xscale, yscale, angle)
-draw_text_transformed(2150, 210, global.lvl, 3, 3, 0);
+draw_text_transformed(2150, 145, global.lvl, 3, 3, 0);
 </string>
           </argument>
         </arguments>
