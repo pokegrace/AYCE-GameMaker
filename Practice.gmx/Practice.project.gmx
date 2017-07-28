@@ -23,9 +23,7 @@
   <backgrounds name="background">
     <background>background\bg_table</background>
   </backgrounds>
-  <paths name="paths">
-    <path>paths\p_player</path>
-  </paths>
+  <paths name="paths"/>
   <fonts name="fonts">
     <font>fonts\fnt_score</font>
   </fonts>
@@ -60,7 +58,6 @@
     <object>objects\obj_shiro</object>
     <object>objects\obj_uni</object>
     <object>objects\obj_wasabiPortal</object>
-    <object>objects\obj_revolver</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menu</room>

@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>num = random_range(1,100); 
+            <string>num = random_range(1,250); 
 
 //--------------------salmon--------------------------
 if (num &lt; 10 &amp;&amp; global.lvl == "sake"){
@@ -39,7 +39,7 @@ if (num &lt; 10 &amp;&amp; global.lvl == "sake"){
     
     // creating objects randomly 
     a = instance_create(1312, 928, makethis); 
-    a.speed = random_range(7, 15);
+    a.speed = random_range(1, 12);
     a.direction = random_range(-270, 270);
 }
 
@@ -55,7 +55,7 @@ if (num &lt; 10 &amp;&amp; global.lvl == "maguro"){
     
     // creating objects randomly 
     a = instance_create(1312, 928, makethis); 
-    a.speed = random_range(7, 15);
+    a.speed = random_range(1, 12);
     a.direction = random_range(-270, 270);
 }
 
@@ -71,7 +71,7 @@ if (num &lt; 10 &amp;&amp; global.lvl == "hamachi"){
     
     // creating objects randomly 
     a = instance_create(1312, 928, makethis);
-    a.speed = random_range(7, 15);
+    a.speed = random_range(1, 12);
     a.direction = random_range(-270, 270);
 }
 
@@ -87,7 +87,7 @@ if (num &lt; 10 &amp;&amp; global.lvl == "tai"){
     
     // creating objects randomly 
     a = instance_create(1312, 928, makethis);
-    a.speed = random_range(7, 15);
+    a.speed = random_range(1, 12);
     a.direction = random_range(-270, 270);
 }
 
@@ -103,7 +103,7 @@ if (num &lt; 10 &amp;&amp; global.lvl == "inari"){
     
     // creating objects randomly 
     a = instance_create(1312, 928, makethis);  
-    a.speed = random_range(7, 15);
+    a.speed = random_range(1, 12);
     a.direction = random_range(-270, 270);
 }
 
@@ -119,7 +119,7 @@ if (num &lt; 10 &amp;&amp; global.lvl == "escolar"){
     
     // creating objects randomly 
     a = instance_create(1312, 928, makethis);
-    a.speed = random_range(7, 15);
+    a.speed = random_range(1, 12);
     a.direction = random_range(-270, 270);
 }
 
@@ -135,7 +135,7 @@ if (num &lt; 10 &amp;&amp; global.lvl == "ikura"){
     
     // creating objects randomly 
     a = instance_create(1312, 928, makethis); 
-    a.speed = random_range(7, 15);
+    a.speed = random_range(1, 12);
     a.direction = random_range(-270, 270);
 }
 
@@ -151,7 +151,7 @@ if (num &lt; 10 &amp;&amp; global.lvl == "masago"){
     
     // creating objects randomly 
     a = instance_create(1312, 928, makethis); 
-    a.speed = random_range(7, 15);
+    a.speed = random_range(1, 12);
     a.direction = random_range(-270, 270);
 }
 
@@ -167,7 +167,7 @@ if (num &lt; 10 &amp;&amp; global.lvl == "tamago"){
     
     // creating objects randomly 
     a = instance_create(1312, 928, makethis);  
-    a.speed = random_range(7, 15);
+    a.speed = random_range(1, 12);
     a.direction = random_range(-270, 270);
 }
 
@@ -183,7 +183,7 @@ if (num &lt; 10 &amp;&amp; global.lvl == "tako"){
     
     // creating objects randomly 
     a = instance_create(1312, 928, makethis); 
-    a.speed = random_range(7, 15);
+    a.speed = random_range(1, 12);
     a.direction = random_range(-270, 270);
 }
 
@@ -199,7 +199,7 @@ if (num &lt; 10 &amp;&amp; global.lvl == "ika"){
     
     // creating objects randomly 
     a = instance_create(1312, 928, makethis);
-    a.speed = random_range(7, 15);
+    a.speed = random_range(1, 12);
     a.direction = random_range(-270, 270);
 }
 
@@ -214,7 +214,7 @@ if (num &lt; 10 &amp;&amp; global.lvl == "hokkigai"){
     
     // creating objects randomly 
     a = instance_create(1312, 928, makethis); 
-    a.speed = random_range(7, 15);
+    a.speed = random_range(1, 12);
     a.direction = random_range(-270, 270);
 }
 
@@ -230,7 +230,7 @@ if (num &lt; 10 &amp;&amp; global.lvl == "tataki"){
     
     // creating objects randomly 
     a = instance_create(1312, 928, makethis);  
-    a.speed = random_range(7, 15);
+    a.speed = random_range(1, 12);
     a.direction = random_range(-270, 270);
 }
 
@@ -246,7 +246,7 @@ if (num &lt; 10 &amp;&amp; global.lvl == "shiro maguro"){
     
     // creating objects randomly 
     a = instance_create(1312, 928, makethis);
-    a.speed = random_range(7, 15);
+    a.speed = random_range(1, 12);
     a.direction = random_range(-270, 270);
 }
 
@@ -262,7 +262,7 @@ if (num &lt; 10 &amp;&amp; global.lvl == "uni"){
     
     // creating objects randomly 
     a = instance_create(1312, 928, makethis);
-    a.speed = random_range(7, 15);
+    a.speed = random_range(1, 12);
     a.direction = random_range(-270, 270);
 }
 </string>

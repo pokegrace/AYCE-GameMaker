@@ -28,8 +28,9 @@
             <string>image_index = 0; // making it start off as salmon
 image_speed = 0; // stops it from cycling through images
 
+friction = 0.1;
+
 depth = -1000; // makes it closer to the player
-path_start(p_player, 25, path_action_continue, true);
 </string>
           </argument>
         </arguments>
@@ -53,11 +54,14 @@ path_start(p_player, 25, path_action_continue, true);
           <argument>
             <kind>1</kind>
             <string>//--------------------movement------------------------
-if(keyboard_check_pressed(vk_space) &amp;&amp; path_speed == 25){
-    path_speed = -25;
-} else if (keyboard_check_pressed(vk_space) &amp;&amp; path_speed == -25){
-    path_speed = 25;
-}
+if(keyboard_check(vk_left)) hspeed -= 1;
+if(keyboard_check(vk_right)) hspeed += 1;
+if(keyboard_check(vk_up)) vspeed -= 1;
+if(keyboard_check(vk_down)) vspeed += 1;
+
+// setting max speed
+if(speed &gt; 10) speed = 10; 
+
 // -----------------collisions--------------------------
 hitWasabi = instance_place(x,y,obj_wasabi); // collision with wasabi
 hitSalmon = instance_place(x,y,obj_salmon); // collision with salmon
@@ -162,6 +166,28 @@ if (global.hitpoints == 0){
     room_goto(rm_gameOver); // goes to room gameover if he dies
 }
 </string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>112</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_wrap</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>4</kind>
+            <string>2</string>
           </argument>
         </arguments>
       </action>
