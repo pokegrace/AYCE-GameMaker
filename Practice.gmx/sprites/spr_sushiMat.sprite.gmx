@@ -20,6 +20,6 @@
   <width>320</width>
   <height>320</height>
   <frames>
-    <frame index="0">images\spr_sushiPortal_0.png</frame>
+    <frame index="0">images\spr_sushiMat_0.png</frame>
   </frames>
 </sprite>

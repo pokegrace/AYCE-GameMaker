@@ -51,7 +51,7 @@
             <string>// by default, draw color is black
 draw_set_font(fnt_score);
 
-// (xpos, ypos, sting to draw, xscale, yscale, angle)
+// (xpos, ypos, thing to draw, xscale, yscale, angle)
 draw_text_transformed(1308, 145, global.points, 3, 3, 0);
 </string>
           </argument>

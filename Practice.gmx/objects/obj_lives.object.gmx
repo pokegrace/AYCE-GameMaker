@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.hitpoints = 3;
+            <string>global.hitpoints = 5;
 </string>
           </argument>
         </arguments>

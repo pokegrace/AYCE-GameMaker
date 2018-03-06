@@ -63,7 +63,7 @@ if(keyboard_check(vk_down)) vspeed += 1;
 if(speed &gt; 10) speed = 10; 
 
 // -----------------collisions--------------------------
-hitWasabi = instance_place(x,y,obj_wasabi); // collision with wasabi
+// hitWasabi = instance_place(x,y,obj_wasabi); // collision with wasabi
 hitSalmon = instance_place(x,y,obj_salmon); // collision with salmon
 hitTuna = instance_place(x,y,obj_tuna);
 hitYellowtail = instance_place(x,y,obj_yellowtail);
@@ -80,19 +80,179 @@ hitTataki = instance_place(x,y,obj_tataki);
 hitShiro = instance_place(x,y,obj_shiro);
 hitUni = instance_place(x,y,obj_uni);
 
+/*
+// when he eats wasabi, hp goes down 1
 if(hitWasabi != noone){
-    global.hitpoints -= 1; // when he eats wasabi, hp goes down 1
+    global.hitpoints -= 1; 
 }
+*/
 
+/*
+// when he collects fish piece, score goes up
+// if he eats the wrong fish, hp goes down (TO DO)
 if(hitSalmon || hitTuna || hitYellowtail || hitRedSnapper || 
     hitInari || hitEscolar || hitIkura || hitMasago || hitTamago ||
-    hitTako || hitIka || hitHokkigai || hitTataki || hitShiro || hitUni != noone){
-    global.points++; // when he collects fish piece, score goes up
+    hitTako || hitIka || hitHokkigai || hitTataki || hitShiro || hitUni != noone)
+    global.points++; 
+*/
+
+//--------------------------------updating points-----------------------------
+
+if(global.lvl == "sake")
+{
+    if(hitSalmon != noone) 
+        global.points++;
+    if(hitTuna || hitYellowtail || hitRedSnapper || 
+    hitInari || hitEscolar || hitIkura || hitMasago || hitTamago ||
+    hitTako || hitIka || hitHokkigai || hitTataki || hitShiro || hitUni != noone)
+        global.hitpoints -= 1;   
 }
+
+if(global.lvl == "maguro")
+{
+    if(hitTuna != noone) 
+        global.points++;
+    if(hitSalmon || hitYellowtail || hitRedSnapper || 
+    hitInari || hitEscolar || hitIkura || hitMasago || hitTamago ||
+    hitTako || hitIka || hitHokkigai || hitTataki || hitShiro || hitUni != noone)
+        global.hitpoints -= 1;   
+}
+
+if(global.lvl == "hamachi")
+{
+    if(hitYellowtail != noone) 
+        global.points++;
+    if(hitTuna || hitSalmon || hitRedSnapper || 
+    hitInari || hitEscolar || hitIkura || hitMasago || hitTamago ||
+    hitTako || hitIka || hitHokkigai || hitTataki || hitShiro || hitUni != noone)
+        global.hitpoints -= 1;   
+}
+
+if(global.lvl == "tai")
+{
+    if(hitRedSnapper != noone) 
+        global.points++;
+    if(hitTuna || hitYellowtail || hitSalmon || 
+    hitInari || hitEscolar || hitIkura || hitMasago || hitTamago ||
+    hitTako || hitIka || hitHokkigai || hitTataki || hitShiro || hitUni != noone)
+        global.hitpoints -= 1;   
+}
+
+if(global.lvl == "inari")
+{
+    if(hitInari != noone) 
+        global.points++;
+    if(hitTuna || hitYellowtail || hitRedSnapper || 
+    hitSalmon || hitEscolar || hitIkura || hitMasago || hitTamago ||
+    hitTako || hitIka || hitHokkigai || hitTataki || hitShiro || hitUni != noone)
+        global.hitpoints -= 1;   
+}
+
+if(global.lvl == "escolar")
+{
+    if(hitEscolar != noone) 
+        global.points++;
+    if(hitTuna || hitYellowtail || hitRedSnapper || 
+    hitInari || hitSalmon || hitIkura || hitMasago || hitTamago ||
+    hitTako || hitIka || hitHokkigai || hitTataki || hitShiro || hitUni != noone)
+        global.hitpoints -= 1;   
+}
+
+if(global.lvl == "ikura")
+{
+    if(hitIkura != noone) 
+        global.points++;
+    if(hitTuna || hitYellowtail || hitRedSnapper || 
+    hitInari || hitEscolar || hitSalmon || hitMasago || hitTamago ||
+    hitTako || hitIka || hitHokkigai || hitTataki || hitShiro || hitUni != noone)
+        global.hitpoints -= 1;   
+}
+
+if(global.lvl == "masago")
+{
+    if(hitMasago != noone) 
+        global.points++;
+    if(hitTuna || hitYellowtail || hitRedSnapper || 
+    hitInari || hitEscolar || hitIkura || hitSalmon || hitTamago ||
+    hitTako || hitIka || hitHokkigai || hitTataki || hitShiro || hitUni != noone)
+        global.hitpoints -= 1;   
+}
+
+if(global.lvl == "tamago")
+{
+    if(hitTamago != noone) 
+        global.points++;
+    if(hitTuna || hitYellowtail || hitRedSnapper || 
+    hitInari || hitEscolar || hitIkura || hitMasago || hitSalmon ||
+    hitTako || hitIka || hitHokkigai || hitTataki || hitShiro || hitUni != noone)
+        global.hitpoints -= 1;   
+}
+
+if(global.lvl == "tako")
+{
+    if(hitTako != noone) 
+        global.points++;
+    if(hitTuna || hitYellowtail || hitRedSnapper || 
+    hitInari || hitEscolar || hitIkura || hitMasago || hitTamago ||
+    hitSalmon || hitIka || hitHokkigai || hitTataki || hitShiro || hitUni != noone)
+        global.hitpoints -= 1;   
+}
+
+if(global.lvl == "ika")
+{
+    if(hitIka != noone) 
+        global.points++;
+    if(hitTuna || hitYellowtail || hitRedSnapper || 
+    hitInari || hitEscolar || hitIkura || hitMasago || hitTamago ||
+    hitTako || hitSalmon || hitHokkigai || hitTataki || hitShiro || hitUni != noone)
+        global.hitpoints -= 1;   
+}
+
+if(global.lvl == "hokkigai")
+{
+    if(hitHokkigai != noone) 
+        global.points++;
+    if(hitTuna || hitYellowtail || hitRedSnapper || 
+    hitInari || hitEscolar || hitIkura || hitMasago || hitTamago ||
+    hitTako || hitIka || hitSalmon || hitTataki || hitShiro || hitUni != noone)
+        global.hitpoints -= 1;   
+}
+
+if(global.lvl == "tataki")
+{
+    if(hitTataki != noone) 
+        global.points++;
+    if(hitTuna || hitYellowtail || hitRedSnapper || 
+    hitInari || hitEscolar || hitIkura || hitMasago || hitTamago ||
+    hitTako || hitIka || hitHokkigai || hitSalmon || hitShiro || hitUni != noone)
+        global.hitpoints -= 1;   
+}
+
+if(global.lvl == "shiro")
+{
+    if(hitShiro != noone) 
+        global.points++;
+    if(hitTuna || hitYellowtail || hitRedSnapper || 
+    hitInari || hitEscolar || hitIkura || hitMasago || hitTamago ||
+    hitTako || hitIka || hitHokkigai || hitTataki || hitSalmon || hitUni != noone)
+        global.hitpoints -= 1;   
+}
+
+if(global.lvl == "uni")
+{
+    if(hitUni != noone) 
+        global.points++;
+    if(hitTuna || hitYellowtail || hitRedSnapper || 
+    hitInari || hitEscolar || hitIkura || hitMasago || hitTamago ||
+    hitTako || hitIka || hitHokkigai || hitTataki || hitShiro || hitSalmon != noone)
+        global.hitpoints -= 1;   
+}
+
+//----------------------updating level-------------------------------
 
 // global points: +5, +7, +9, +11, +13, +15 (cap)
 if(global.points == 5){
-    image_index = 1; // sprite_index changes sprite appearance
+    image_index = 1; // image_index changes sprite appearance
     global.lvl = "maguro";
 }
 

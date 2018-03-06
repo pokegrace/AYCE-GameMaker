@@ -9,15 +9,15 @@
     <sprite>sprites\spr_title</sprite>
     <sprite>sprites\spr_start</sprite>
     <sprite>sprites\spr_score</sprite>
+    <sprite>sprites\spr_order</sprite>
     <sprite>sprites\spr_player</sprite>
-    <sprite>sprites\spr_lvlPiece</sprite>
+    <sprite>sprites\spr_fishPiece</sprite>
     <sprite>sprites\spr_riceBall</sprite>
     <sprite>sprites\spr_gameOver</sprite>
     <sprite>sprites\spr_wasabi</sprite>
     <sprite>sprites\spr_livesTitle</sprite>
-    <sprite>sprites\spr_lvlTitle</sprite>
-    <sprite>sprites\spr_sushiPortal</sprite>
-    <sprite>sprites\spr_wasabiPortal</sprite>
+    <sprite>sprites\spr_sushiMat</sprite>
+    <sprite>sprites\spr_sakeCup</sprite>
     <sprite>sprites\spr_revolver</sprite>
   </sprites>
   <backgrounds name="background">
@@ -31,9 +31,12 @@
     <object>objects\obj_title</object>
     <object>objects\obj_start</object>
     <object>objects\obj_livesTitle</object>
-    <object>objects\obj_lvlTitle</object>
     <object>objects\obj_scoreTitle</object>
-    <object>objects\obj_itemGenerator</object>
+    <object>objects\obj_orderTitle</object>
+    <object>objects\obj_itemGeneratorLeft</object>
+    <object>objects\obj_itemGeneratorRight</object>
+    <object>objects\obj_itemGeneratorTop</object>
+    <object>objects\obj_itemGeneratorBottom</object>
     <object>objects\obj_score</object>
     <object>objects\obj_lives</object>
     <object>objects\obj_lvl</object>
@@ -57,7 +60,7 @@
     <object>objects\obj_tataki</object>
     <object>objects\obj_shiro</object>
     <object>objects\obj_uni</object>
-    <object>objects\obj_wasabiPortal</object>
+    <object>objects\obj_sakeCup</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menu</room>

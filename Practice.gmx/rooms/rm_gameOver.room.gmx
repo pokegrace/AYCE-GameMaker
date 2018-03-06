@@ -51,9 +51,9 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_gameOver" x="896" y="96" name="inst_9530CBB5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_gameOver" x="800" y="64" name="inst_9530CBB5" locked="0" code="" scaleX="1.29095351696014" scaleY="1.82857143878937" colour="4294967295" rotation="0"/>
     <instance objName="obj_riceBall" x="1120" y="704" name="inst_D5D798CF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_start" x="960" y="1696" name="inst_033BD8D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_start" x="576" y="1696" name="inst_033BD8D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
