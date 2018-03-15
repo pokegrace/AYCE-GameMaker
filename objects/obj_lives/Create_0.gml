@@ -1,0 +1,2 @@
+global.hitpoints = 5;
+

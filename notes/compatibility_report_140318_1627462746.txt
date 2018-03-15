@@ -1,0 +1,9 @@
+Font fnt_score has been converted to font family ArcadeClassic (Regular) - Font has been regenerated, small inconsistencies may occur
+Windows NSIS Installer Script has been set to default due to changes in GameMaker Studio 2
+Game speed set to 60
+Added compatibility script 'action/action_another_room.gml'
+Added compatibility script 'instance/instance_create.gml'
+Added compatibility script 'object/object_get_depth.gml'
+Added compatibility script 'action/__init_action.gml'
+Added compatibility script '__init_global.gml'
+Added compatibility script '__global_object_depths.gml'
